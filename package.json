@@ -1,0 +1,43 @@
+{
+  "name": "nodebb.xyz",
+  "license": "GPL-3.0",
+  "description": "NodeBB Forum",
+  "version": "1.11.2",
+  "homepage": "http://ok.nodebb.xyz",
+  "main": "NodeBB/app.js",
+  "scripts": {
+    "install": "cp config.json NodeBB/config.json && cp cache-buster NodeBB/build/cache-buster",
+    "start": "npm install -g npm@latest",
+    "dev": "./NodeBB/nodebb setup && ./NodeBB/nodebb dev",
+    "ok": "./NodeBB/nodebb upgrade && node NodeBB/loader.js --no-daemon --no-silent"
+  },
+  "dependencies": {
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "nyc": "^13.3.0"
+  },
+  "engines": {
+    "node": "*",
+    "npm": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oovn/nodebb.xyz"
+  },
+  "bugs": {
+    "url": "https://github.com/NodeBB/NodeBB/issues"
+  },
+  "maintainers": [
+    {
+      "name": "yzazy",
+      "email": "yzazy@nodebb.xyz",
+      "url": "https://github.com/yzazy"
+    },
+    {
+      "name": "binhbat",
+      "email": "binhbat@nodebb.xyz",
+      "url": "https://github.com/binhbat"
+    }
+  ]
+}

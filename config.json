@@ -1,0 +1,12 @@
+{
+    "url": "http://localhost",
+    "port": "8080",
+    "database": "redis",
+    "redis": {
+        "host": "172.30.194.153",
+        "port": "6379",
+        "password": "matma",
+        "database": "0"
+    },
+    "secret": "chuc8ban-mot4-ngay-4vui-ben1gia2dinh"
+}
