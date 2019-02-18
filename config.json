@@ -3,7 +3,7 @@
     "port": "8080",
     "database": "redis",
     "redis": {
-        "host": "172.30.194.153",
+        "host": "172.30.169.199",
         "port": "6379",
         "password": "matma",
         "database": "0"
