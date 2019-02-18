@@ -6,9 +6,9 @@
   "homepage": "http://ok.nodebb.xyz",
   "main": "NodeBB/app.js",
   "scripts": {
-    "install": "cp config.json NodeBB/config.json && cp cache-buster NodeBB/build/cache-buster",
+    "install": "cp config.json NodeBB/config.json && cp cache-buster NodeBB/build/cache-buster && ./NodeBB/nodebb setup",
     "start": "npm install -g npm@latest",
-    "dev": "./NodeBB/nodebb setup && ./NodeBB/nodebb dev",
+    "dev": "./NodeBB/nodebb upgrade && ./NodeBB/nodebb dev",
     "ok": "./NodeBB/nodebb upgrade && node NodeBB/loader.js --no-daemon --no-silent"
   },
   "dependencies": {
